@@ -170,7 +170,7 @@ createRestaurantHTML = (restaurant) => {
   image.setAttribute('alt', `An image of ${restaurant.name}`);
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 
@@ -218,7 +218,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 
  /* Add The service worker*/
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./js/sw/sw.js')
+  navigator.serviceWorker.register('sw.js')
   .then((reg) => {
     // registration worked
     if(reg.installing) {

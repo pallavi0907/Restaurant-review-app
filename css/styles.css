@@ -30,7 +30,7 @@ a:hover, a:focus {
 a img {
 	border: none 0px #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 0 20px;
 }
@@ -151,7 +151,6 @@ nav h1 a {
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
-  min-height: 380px;
   padding: 0 40px 25px;
   text-align: left;
   max-width: 380px;
@@ -162,10 +161,9 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -274,7 +272,7 @@ nav h1 a {
   justify-content: center;
   align-items: center;
 }
-#reviews-container h2 {
+#reviews-container h3 {
   color: #8A4500;
   font-size: 24pt;
   font-weight: 300;
@@ -344,6 +342,25 @@ nav h1 a {
 }
 .aria-label {
   display: none;
+}
+
+/* ====================== Media Queries: 320px; ====================== */
+@media screen and (min-width: 320px) {
+	#restaurant-container, #reviews-container {
+    padding: 20px 11px;
+    margin: auto;
+  }
+	#restaurants-list {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+	#restaurants-list li {
+		padding: 0 30px 10px 30px;
+		margin: 15px;
+	}
 }
 
 /* ====================== Media Queries: 480px; ====================== */
