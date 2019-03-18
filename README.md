@@ -1,12 +1,12 @@
-#Restaurant Review app
+# Restaurant Review app
 
 The goal of this project is to implement Responsive design, service worker to cache and Accessibilty.
 
-#Project Overview:
+# Project Overview:
 
 * For the Restaurant Reviews project, we have to incrementally convert a static webpage to a mobile-ready web application. In Stage One, this project is a static design that lacks accessibility and need to convert the design to be responsive on different sized displays and accessible for screen reader use. There is also need to add a service worker to begin the process of creating a seamless offline experience for users.
 
-#How to run the application:
+# How to run the application:
 
 For Users:
 * In this website , you can search your choice of restaurant. You can filter your search by location and cuisine type.
